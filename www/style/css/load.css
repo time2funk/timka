@@ -1,0 +1,252 @@
+.cssload-loader {
+	width: 319px;
+	height: 319px;
+	line-height: 319px;
+	margin: 106px auto;
+	position: relative;
+	box-sizing: border-box;
+	text-align: center;
+	z-index: 0;
+	text-transform: uppercase;
+		-o-text-transform: uppercase;
+		-ms-text-transform: uppercase;
+		-webkit-text-transform: uppercase;
+		-moz-text-transform: uppercase;
+}
+
+.cssload-loader:before,
+.cssload-loader:after {
+	opacity: 0;
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	content: "\0020";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 213px;
+	border: 11px solid rgb(0,0,0);
+	box-shadow: 0 0 106px rgb(0,0,0), inset 0 0 106px rgb(0,0,0);
+		-o-box-shadow: 0 0 106px rgb(0,0,0), inset 0 0 106px rgb(0,0,0);
+		-ms-box-shadow: 0 0 106px rgb(0,0,0), inset 0 0 106px rgb(0,0,0);
+		-webkit-box-shadow: 0 0 106px rgb(0,0,0), inset 0 0 106px rgb(0,0,0);
+		-moz-box-shadow: 0 0 106px rgb(0,0,0), inset 0 0 106px rgb(0,0,0);
+}
+
+.cssload-loader:after {
+	z-index: 1;
+	animation: cssload-gogoloader 1.7s infinite 0.85s;
+		-o-animation: cssload-gogoloader 1.7s infinite 0.85s;
+		-ms-animation: cssload-gogoloader 1.7s infinite 0.85s;
+		-webkit-animation: cssload-gogoloader 1.7s infinite 0.85s;
+		-moz-animation: cssload-gogoloader 1.7s infinite 0.85s;
+}
+
+.cssload-loader:before {
+	z-index: 2;
+	animation: cssload-gogoloader 1.7s infinite;
+		-o-animation: cssload-gogoloader 1.7s infinite;
+		-ms-animation: cssload-gogoloader 1.7s infinite;
+		-webkit-animation: cssload-gogoloader 1.7s infinite;
+		-moz-animation: cssload-gogoloader 1.7s infinite;
+}
+
+
+
+@keyframes cssload-gogoloader {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-gogoloader {
+	0% {
+		-o-transform: scale(0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		-o-transform: scale(1);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-gogoloader {
+	0% {
+		-ms-transform: scale(0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		-ms-transform: scale(1);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-gogoloader {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-gogoloader {
+	0% {
+		-moz-transform: scale(0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		-moz-transform: scale(1);
+		opacity: 0;
+	}
+}
+/* B E L L */
+/*.cssload-bell {
+	width: 97px;
+	height: 99px;
+	border-radius: 100%;
+	position: absolute;
+	left: calc(50% - 49px);
+}
+
+.cssload-circle {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.cssload-circle .cssload-inner {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	border: 5px solid rgba(232,173,55,0.7);
+	border-right: none;
+	border-top: none;
+	background-clip: padding;
+	box-shadow: inset 0px 0px 10px rgba(201,181,201,0.15);
+}
+
+.cssload-circle:nth-of-type(0) {
+	transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+}
+.cssload-circle:nth-of-type(0) .cssload-inner {
+	animation: cssload-spin 2.3s infinite linear;
+		-o-animation: cssload-spin 2.3s infinite linear;
+		-ms-animation: cssload-spin 2.3s infinite linear;
+		-webkit-animation: cssload-spin 2.3s infinite linear;
+		-moz-animation: cssload-spin 2.3s infinite linear;
+}
+
+.cssload-circle:nth-of-type(1) {
+	transform: rotate(70deg);
+		-o-transform: rotate(70deg);
+		-ms-transform: rotate(70deg);
+		-webkit-transform: rotate(70deg);
+		-moz-transform: rotate(70deg);
+}
+.cssload-circle:nth-of-type(1) .cssload-inner {
+	animation: cssload-spin 2.3s infinite linear;
+		-o-animation: cssload-spin 2.3s infinite linear;
+		-ms-animation: cssload-spin 2.3s infinite linear;
+		-webkit-animation: cssload-spin 2.3s infinite linear;
+		-moz-animation: cssload-spin 2.3s infinite linear;
+}
+
+.cssload-circle:nth-of-type(2) {
+	transform: rotate(140deg);
+		-o-transform: rotate(140deg);
+		-ms-transform: rotate(140deg);
+		-webkit-transform: rotate(140deg);
+		-moz-transform: rotate(140deg);
+}
+.cssload-circle:nth-of-type(2) .cssload-inner {
+	animation: cssload-spin 2.3s infinite linear;
+		-o-animation: cssload-spin 2.3s infinite linear;
+		-ms-animation: cssload-spin 2.3s infinite linear;
+		-webkit-animation: cssload-spin 2.3s infinite linear;
+		-moz-animation: cssload-spin 2.3s infinite linear;
+}
+
+.cssload-bell {
+	animation: cssload-spin 5.75s infinite linear;
+		-o-animation: cssload-spin 5.75s infinite linear;
+		-ms-animation: cssload-spin 5.75s infinite linear;
+		-webkit-animation: cssload-spin 5.75s infinite linear;
+		-moz-animation: cssload-spin 5.75s infinite linear;
+}
+
+
+
+@keyframes cssload-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes cssload-spin {
+	from {
+		-o-transform: rotate(0deg);
+	}
+	to {
+		-o-transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes cssload-spin {
+	from {
+		-ms-transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes cssload-spin {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}*/
